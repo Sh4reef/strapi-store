@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "receiver": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "biginteger"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "integer"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "addresses"
+    }
+  }
+}

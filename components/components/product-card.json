@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_product_cards",
+  "info": {
+    "name": "ProductCard",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "product"
+    }
+  }
+}

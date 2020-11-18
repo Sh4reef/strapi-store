@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_products_cards_grids",
+  "info": {
+    "name": "ProductsCardsGrid",
+    "icon": "grip-vertical",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "products": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.product-card"
+    }
+  }
+}

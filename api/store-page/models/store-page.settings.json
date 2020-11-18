@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "store_pages",
+  "info": {
+    "name": "StorePage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.products-cards-grid"
+      ]
+    }
+  }
+}

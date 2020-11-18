@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "product",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "variations": {
+      "collection": "product",
+      "via": "product"
+    },
+    "product": {
+      "private": true,
+      "model": "product",
+      "via": "variations"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "in_stock": {
+      "type": "integer"
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category",
+      "dominant": true
+    }
+  }
+}
