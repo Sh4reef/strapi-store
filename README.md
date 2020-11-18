@@ -1,3 +1,12 @@
 # Strapi application
 
-A quick description of your strapi application
+# Start the development
+- Install dependencies
+```
+npm i
+```
+
+- Run the server
+```
+npm run develop
+```
